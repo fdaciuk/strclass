@@ -1,13 +1,13 @@
-;(function (root, factory) {
+;(function (root, moduleName, factory) {
   'use strict'
   if (typeof define === 'function' && define.amd) {
-    define('strclass', factory)
+    define(moduleName, factory)
   } else if (typeof exports === 'object') {
     exports = module.exports = factory()
   } else {
-    root.ajax = factory()
+    root[moduleName] = factory()
   }
-})(this, function () {
+})(this, 'strclass', function () {
   'use strict'
 
   function strclass () {
