@@ -2,13 +2,17 @@
   "name": "strclass",
   "version": "0.0.1",
   "description": "Change objects to strings CSS classes",
-  "main": "index.js",
+  "main": "dist/strclass.min.js",
+  "scripts": {
+    "test": "node test.js",
+    "uglify": "minify --output dist/strclass.min.js index.js",
+    "preversion": "yarn test",
+    "postversion": "npm publish"
+  },
   "repository": "git@github.com:fdaciuk/strclass.git",
   "author": "Fernando Daciuk (@fdaciuk)",
   "license": "MIT",
-  "scripts": {
-    "test": "node test.js",
-    "preversion": "yarn test",
-    "postversion": "npm publish"
+  "devDependencies": {
+    "minifier": "^0.8.1"
   }
 }
