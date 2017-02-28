@@ -5,5 +5,8 @@
   "main": "index.js",
   "repository": "git@github.com:fdaciuk/strclass.git",
   "author": "Fernando Daciuk (@fdaciuk)",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "test": "node test.js"
+  }
 }
