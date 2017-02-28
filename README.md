@@ -2,6 +2,8 @@
 
 > Change objects to strings CSS classes
 
+[![Build Status][travis-image]][travis-url]
+
 ## Installation
 
 ```
@@ -13,12 +15,26 @@ yarn add strclass
 `strclass` is an _Universal Module_, and can be used as a global,
 with AMD, CommonJS or ES Module.
 
+**Signature:**
+
+### `strclass({ className: booleanConditionToShowThisClass }, [defaultClass1, defaultclass2, ..., defaultclassN])`
+
+**Usage:**
+
 ```js
 import strclass from 'strclass'
 
-console.log(strclass({ active: true })) // 'active'
+console.log(strclass({ highlighted: true }))
+// 'highlighted'
 
-console.log(strclass({ '-active': true }, 'button')) // 'button -active'
+console.log(strclass({ '-active': true }, 'button'))
+// 'button -active'
+
+console.log(strclass({ '-active': true }, 'button', 'button-default'))
+// 'button button-default -active'
+
+console.log(strclass({ active: false }))
+// ''
 ```
 
 You can use with React, VanillaJS or any other lib/framework:
@@ -32,8 +48,15 @@ const Button = ({ active, children }) => (
 
 <Button active>Click!</Button>
 // will render: <button class="button active">Click!</button>
+
+<Button active={false}>Click!</Button>
+// will render: <button class="button">Click!</button>
 ```
 
 ## License
 
-[MIT](https://github.com/fdaciuk/licenses/blob/master/MIT-LICENSE.md) &copy; Fernando Daciuk
+[MIT](license-url) &copy; Fernando Daciuk
+
+[travis-image]: https://img.shields.io/travis/fdaciuk/strclass.svg?style=flat-square
+[travis-url]: https://travis-ci.org/fdaciuk/strclass
+[license-url]: https://github.com/fdaciuk/licenses/blob/master/MIT-LICENSE.md
