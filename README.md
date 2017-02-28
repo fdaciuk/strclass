@@ -1,2 +1,3 @@
 # strclass
-Change objects to strings CSS classes
+
+> Change objects to strings CSS classes

@@ -1,0 +1,9 @@
+{
+  "name": "strclass",
+  "version": "0.0.0",
+  "description": "Change objects to strings CSS classes",
+  "main": "index.js",
+  "repository": "git@github.com:fdaciuk/strclass.git",
+  "author": "Fernando Daciuk (@fdaciuk)",
+  "license": "MIT"
+}
