@@ -17,7 +17,9 @@ with AMD, CommonJS or ES Module.
 
 **Signature:**
 
-### `strclass({ className: booleanConditionToShowThisClass }, [defaultClass1, defaultclass2, ..., defaultclassN])`
+```
+strclass({ className: booleanConditionToShowThisClass }, [defaultClass1, defaultclass2, ..., defaultclassN])
+```
 
 **Usage:**
 
