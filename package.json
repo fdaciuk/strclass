@@ -1,6 +1,6 @@
 {
   "name": "strclass",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Change objects to strings CSS classes",
   "main": "dist/strclass.min.js",
   "scripts": {
