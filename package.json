@@ -7,6 +7,7 @@
     "test": "node test.js",
     "uglify": "minify --output dist/strclass.min.js index.js",
     "push": "git push origin master --tags",
+    "size": "node -e \"process.stdout.write('gzip size: ')\" && gzip-size dist/strclass.min.js",
     "preversion": "yarn uglify && yarn test",
     "postversion": "npm publish && yarn push"
   },
@@ -14,6 +15,7 @@
   "author": "Fernando Daciuk (@fdaciuk)",
   "license": "MIT",
   "devDependencies": {
+    "gzip-size-cli": "^2.0.0",
     "minifier": "^0.8.1"
   }
 }
