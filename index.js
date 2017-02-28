@@ -26,7 +26,7 @@
       reduceObjectToString,
       classes.filter(isTruthy).join(' ')
     )
-    .replace(/^\s+|\s+$/, '')
+    .replace(/^\s+|\s+$/g, '')
   }
 
   return strclass
