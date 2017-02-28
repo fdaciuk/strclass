@@ -6,8 +6,9 @@
   "scripts": {
     "test": "node test.js",
     "uglify": "minify --output dist/strclass.min.js index.js",
+    "push": "git push origin master --tags",
     "preversion": "yarn uglify && yarn test",
-    "postversion": "npm publish"
+    "postversion": "npm publish && yarn push"
   },
   "repository": "git@github.com:fdaciuk/strclass.git",
   "author": "Fernando Daciuk (@fdaciuk)",
