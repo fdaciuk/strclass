@@ -55,7 +55,7 @@ const Button = ({ active, children }) => (
 // will render: <button class="button">Click!</button>
 ```
 
-If you are using _CSS Modules_, ou need to pass the class as a dynamic value, just do:
+If you are using _CSS Modules_, or need to pass the class as a dynamic value, just do:
 
 ```js
 const ac = 'active'
