@@ -13,7 +13,7 @@ yarn add strclass
 `strclass` is an _Universal Module_, and can be used as a global,
 with AMD, CommonJS or ES Module.
 
-```
+```js
 import strclass from 'strclass'
 
 console.log(strclass({ active: true })) // 'active'
@@ -21,9 +21,9 @@ console.log(strclass({ active: true })) // 'active'
 console.log(strclass({ '-active': true }, 'button')) // 'button -active'
 ```
 
-You can use with React:
+You can use with React, VanillaJS or any other lib/framework:
 
-```
+```js
 const Button = ({ active, children }) => (
   <button className={strclass({ active }, 'button')}>
     {children}
