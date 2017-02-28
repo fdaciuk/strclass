@@ -1,6 +1,6 @@
 # strclass
 
-> Change objects to strings CSS classes
+> A tiny library to apply CSS classes as strings from objects
 
 [![Build Status][travis-image]][travis-url]
 
