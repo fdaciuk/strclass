@@ -6,7 +6,7 @@
   "scripts": {
     "test": "node test.js",
     "uglify": "minify --output dist/strclass.min.js index.js",
-    "preversion": "yarn test",
+    "preversion": "yarn uglify && yarn test",
     "postversion": "npm publish"
   },
   "repository": "git@github.com:fdaciuk/strclass.git",
