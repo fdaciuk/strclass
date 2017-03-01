@@ -62,6 +62,22 @@ const ac = 'active'
 console.log(strclass({ [ac]: true })) // 'active'
 ```
 
+## Differences from [`classnames module`](https://github.com/JedWatson/classnames)
+
+**Size**
+
+`strclass` has ~200bytes gzipped.
+
+**Signature**
+
+With `classnames`, you can pass any argument as `String`, `Object` or `Array`.
+Otherwise, `strclass` has a signature that should be respected: `Object` as a first argument, with the conditionals,
+and any other argument should be a `String`.
+
+If you don't need conditionals, you don't need `strclass`. Just use `strings`.
+
+That's it =)
+
 ## License
 
 [MIT](license-url) &copy; Fernando Daciuk
