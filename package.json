@@ -9,7 +9,7 @@
     "push": "git push origin master --tags",
     "size": "node -e \"process.stdout.write('gzip size: ')\" && gzip-size dist/strclass.min.js",
     "commit:build": "git add . && git commit --allow-empty -S -m 'Minifying'",
-    "preversion": "yarn test && yarn uglify && yarn commit:build",
+    "preversion": "yarn test && yarn build && yarn commit:build",
     "postversion": "npm publish && yarn push"
   },
   "repository": "git@github.com:fdaciuk/strclass.git",
