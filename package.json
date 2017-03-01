@@ -12,11 +12,12 @@
     "preversion": "yarn test && yarn build && yarn commit:build",
     "postversion": "npm publish && yarn push"
   },
-  "repository": "git@github.com:fdaciuk/strclass.git",
-  "author": "Fernando Daciuk (@fdaciuk)",
-  "license": "MIT",
   "devDependencies": {
     "gzip-size-cli": "^2.0.0",
     "minifier": "^0.8.1"
-  }
+  },
+  "repository": "git@github.com:fdaciuk/strclass.git",
+  "author": "Fernando Daciuk (@fdaciuk)",
+  "license": "MIT",
+  "keywords": ["react", "css", "classnames", "classname", "strclass"]
 }
