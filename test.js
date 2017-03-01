@@ -1,6 +1,6 @@
 'use strict'
 
-const strclass = require('./')
+const strclass = require('./src')
 
 console.assert(typeof strclass === 'function', 'strclass should be a function')
 

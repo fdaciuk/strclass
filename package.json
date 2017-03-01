@@ -5,7 +5,7 @@
   "main": "dist/strclass.min.js",
   "scripts": {
     "test": "node test.js",
-    "build": "minify --output dist/strclass.min.js index.js",
+    "build": "minify --output dist/strclass.min.js src/index.js",
     "push": "git push origin master --tags",
     "size": "node -e \"process.stdout.write('gzip size: ')\" && gzip-size dist/strclass.min.js",
     "commit:build": "git add . && git commit --allow-empty -S -m 'Minifying'",
