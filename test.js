@@ -24,4 +24,10 @@ console.assert(
   'strclass({ active: true }, "button", null) should return "button active"'
 )
 
+const ac = 'active'
+console.assert(
+  strclass({ [ac]: true }) === 'active',
+  'const ac = "active"\nstrclass({ [ac]: true }) should return "active"'
+)
+
 console.log('All tests passed!')
