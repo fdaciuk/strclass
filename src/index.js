@@ -15,12 +15,8 @@
     }
 
     return Object.keys(rules)
-      .reduce(objectToString, classes.filter(isTruthy).join(' '))
+      .reduce(objectToString, classes.filter(Boolean).join(' '))
       .replace(/^\s+|\s+$/g, '')
-  }
-
-  function isTruthy (v) {
-    return !!v
   }
 
   return strclass
