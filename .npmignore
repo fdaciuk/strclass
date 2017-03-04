@@ -1,3 +1,5 @@
 docs
 test.js
 .travis.yml
+.nyc_output
+yarn.lock
