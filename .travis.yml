@@ -2,9 +2,6 @@ language: node_js
 node_js:
   - "7.6"
 
-after_install:
-  - "yarn add --dev coveralls"
-
 addons:
   coveralls:
     repo_token: YAK9nniKwGQRQhJ0Aru7aAtkraD0WLdQD

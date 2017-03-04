@@ -14,6 +14,7 @@
     "postversion": "npm publish && yarn push"
   },
   "devDependencies": {
+    "coveralls": "^2.11.16",
     "gzip-size-cli": "^2.0.0",
     "minifier": "^0.8.1",
     "nyc": "^10.1.2"
