@@ -3,6 +3,7 @@
 > A tiny library to apply CSS classes as strings from objects
 
 [![Build Status][travis-image]][travis-url]
+[![Coveralls Coverage Status][coverage-image]][coverage-url]
 
 ## Installation
 
@@ -84,4 +85,6 @@ That's it =)
 
 [travis-image]: https://img.shields.io/travis/fdaciuk/strclass.svg?style=flat-square
 [travis-url]: https://travis-ci.org/fdaciuk/strclass
+[coverage-image]: https://img.shields.io/coveralls/fdaciuk/strclass/master.svg?style=flat-square
+[coverage-url]: https://coveralls.io/r/fdaciuk/strclass?branch=master
 [license-url]: https://github.com/fdaciuk/licenses/blob/master/MIT-LICENSE.md

@@ -4,7 +4,8 @@
   "description": "A tiny library to apply CSS classes as strings from objects",
   "main": "dist/strclass.min.js",
   "scripts": {
-    "test": "node test.js",
+    "test": "nyc --report-dir docs node test.js",
+    "coverage": "nyc --report-dir docs --reporter=lcov node test.js",
     "build": "minify --output dist/strclass.min.js src/index.js",
     "push": "git push origin master --tags",
     "size": "node -e \"process.stdout.write('gzip size: ')\" && gzip-size dist/strclass.min.js",
@@ -14,7 +15,8 @@
   },
   "devDependencies": {
     "gzip-size-cli": "^2.0.0",
-    "minifier": "^0.8.1"
+    "minifier": "^0.8.1",
+    "nyc": "^10.1.2"
   },
   "repository": "git@github.com:fdaciuk/strclass.git",
   "author": "Fernando Daciuk (@fdaciuk)",
