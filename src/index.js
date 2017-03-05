@@ -7,8 +7,7 @@
 })(this, 'strclass', function () {
   'use strict'
 
-  function strclass () {
-    var rules = arguments[0]
+  function strclass (rules) {
     var classes = Array.prototype.slice.call(arguments, 1)
 
     function objectToString (acc, rule) {
